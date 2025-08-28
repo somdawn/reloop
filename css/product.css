@@ -1,0 +1,199 @@
+main {
+    @media only screen and (max-width: 720px) {
+        font-size: 8px;
+    }
+}
+
+.program_wrapper {
+    padding: 2em;
+
+    & .program_title {
+        font-size: 2.4em;
+        font-weight: 500;
+        color: var(--pointB);
+        margin-bottom: 1em;
+        text-align: center;
+        padding: 5em 0 0;
+    }
+
+    & .program_tabs {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 2em;
+
+        & .tab_btn {
+            font-size: 1.4em;
+            padding: 0.5em 1em;
+            border-radius: 5em;
+            border: 2px solid var(--pointG);
+            background-color: #fff;
+            color: var(--pointB);
+            cursor: pointer;
+            transition: 0.3s;
+
+            &.active {
+                background-color: var(--pointG);
+                color: #fff;
+            }
+
+            &:hover {
+                background-color: var(--pointM);
+                color: #fff;
+            }
+        }
+    }
+
+    & .product_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20em, 20em));
+        gap: 1.5em;
+        justify-content: center;
+        margin-top: 6em;
+
+        & .product_card {
+            border-radius: 1.5em;
+            overflow: hidden;
+            box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+
+            & .product_images {
+                display: flex;
+                gap: 0.5em;
+
+                & img {
+                    width: 100%;
+                    border-radius: 1em;
+                    object-fit: cover;
+                }
+            }
+
+            & .product_info {
+                padding: 0.8em;
+                background-color: #fff;
+                flex-grow: 1;
+
+                & .product_name {
+                    font-size: 1.4em;
+                    color: var(--pointB);
+                    margin-bottom: 0.5em;
+                }
+
+                & .product_price {
+                    font-size: 1.2em;
+                    color: var(--pointM);
+                    margin-bottom: 0.5em;
+                }
+
+                & .product_category {
+                    display: flex;
+                    gap: 0.3em;
+                    margin-bottom: 1em;
+
+                    & span {
+                        color: #fff;
+                        font-size: 1em;
+                        padding: 0.2em 0.5em;
+                        border-radius: 1em;
+                    }
+
+                    & .cat_new {
+                        background: var(--pointG);
+                    }
+
+                    & .cat_best {
+                        background: var(--pointB);
+                    }
+                }
+
+                & .product_color {
+                    font-size: 1em;
+                    color: var(--pointB);
+                }
+            }
+        }
+    }
+
+    & .pagination {
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+
+        & button {
+            padding: 0.3em 0.7em;
+            border-radius: 5em;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: var(--pointM);
+                color: #fff;
+            }
+        }
+
+        & .page_numbers {
+            display: flex;
+            gap: 0.3em;
+
+            & span {
+                padding: 0.3em 0.6em;
+                border-radius: 5em;
+                border: none;
+                cursor: pointer;
+
+                &.active {
+                    background-color: var(--pointG);
+                    color: #fff;
+                }
+            }
+        }
+
+        margin-bottom: 10em;
+    }
+
+    @media (max-width: 768px) {
+
+        & .product_grid {
+            grid-template-columns: repeat(auto-fit, minmax(10em, 10em));
+            gap: 1em;
+        }
+
+        & .program_tabs {
+            flex-direction: column;
+            gap: 0.5em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        & .product_grid {
+            grid-template-columns: repeat(auto-fit, minmax(8em, 1em));
+            gap: 0.8em;
+        }
+
+        & .program_tabs {
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        & .program_title {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/common.css">
+    <link rel="stylesheet" href="./../css/product.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <a href="./../index.html">
+                    <img src="./../img/size_up.png" alt="WLogo">
+                </a>
+            </h1>
+            <ul class="depth1">
+                <li>
+                    <a href="">소개</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="./../html/inform.html">제로웨이스트란?</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">보도자료</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="./../html/news.html">관련뉴스</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">상품</a>
+                    <ul class="depth2 dep2flex">
+                        <li>
+                            <a href="./../html/product.html">인기많아요</a>
+                        </li>
+                        <li>
+                            <a href="./../html/product.html">새로워요</a>
+                        </li>
+                        <li>
+                            <a href="./../html/product.html">다 볼래요</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="icon">
+                <li>
+                    <a href="./login.html"><img src="./../img/login.png" alt="login"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./../img/mypage.png" alt="mypage"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./../img/menu.png" alt="menu"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="program_wrapper">
+            <h1 class="program_title">Re:Loop의 다양한 친환경 상품을 만나보세요</h1>
+
+            <!-- 카테고리 탭 -->
+            <div class="program_tabs">
+                <button class="tab_btn" data-category="all">전체상품</button>
+                <button class="tab_btn active" data-category="new">신제품</button>
+                <button class="tab_btn" data-category="best">베스트</button>
+            </div>
+
+            <!-- 제품 그리드 -->
+            <div class="product_grid"></div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <button class="prev">&lt;</button>
+                <span class="page_numbers"></span>
+                <button class="next">&gt;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_logo">
+                <a href="#"><img src="./../img/logo_c.png" alt="logo"></a>
+            </div>
+
+            <div class="footer_address">
+                <p>서울특별시 강남구 테헤란로 123, 5층</p>
+                <p>사업자 등록번호: 123-45-67890</p>
+            </div>
+
+            <div class="footer_contact">
+                <h4>고객센터</h4>
+                <p>전화: 02-123-4567</p>
+                <p>이메일: reloop@example.com</p>
+            </div>
+
+            <div class="footer_notice">
+                <h4>공지사항</h4>
+                <ul>
+                    <li><a href="#">신제품 출시 안내</a></li>
+                    <li><a href="#">휴무 안내</a></li>
+                    <li><a href="#">이벤트 소식</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p>&copy; 2025 Company Re:Loop. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./../js/common.js"></script>
+    <script src="./../js/product.js"></script>
+</body>
+
+</html>

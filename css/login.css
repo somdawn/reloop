@@ -1,0 +1,92 @@
+.login_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .login_box {
+        width: 70%;
+        height: 50em;
+        background: #fff;
+        padding: 2em;
+        border-radius: 2em;
+        box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.2);
+        text-align: center;
+        align-content: center;
+
+        h1 {
+            color: var(--pointB);
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            color: var(--pointM);
+            font-size: 1.6em;
+            font-weight: 500;
+            margin-bottom: 2em;
+        }
+
+        .login_form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            padding: 0 20%;
+
+            input {
+                padding: 1em;
+                font-size: 1.2em;
+                border-radius: 5em;
+                border: 2px solid var(--pointG);
+                outline: none;
+                transition: 0.3s;
+
+                &:focus {
+                    border-color: var(--pointM);
+                    box-shadow: 0 0 0.5em var(--pointM);
+                }
+            }
+
+            button {
+                padding: 1em;
+                background-color: var(--pointG);
+                color: white;
+                font-size: 1.2em;
+                border: none;
+                border-radius: 5em;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: var(--pointM);
+                }
+            }
+        }
+
+        .signup_link {
+            margin-top: 1.5em;
+            font-size: 1em;
+
+            a {
+                color: var(--pointB);
+                text-decoration: none;
+                margin: 0 0.5em;
+
+                &:hover {
+                    color: var(--pointG);
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .login_wrapper {
+        .login_box {
+            padding: 1.5em;
+            border-radius: 1.5em;
+        }
+    }
+}

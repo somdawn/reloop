@@ -1,0 +1,56 @@
+body {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)),
+}
+
+
+main {
+    padding: 10em 5em;
+
+    section {
+        margin-bottom: 5em;
+        padding: 1em 1.5em;
+        align-items: center;
+
+        h2 {
+            font-size: 2.4em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 1.6em;
+        }
+
+        ul {
+            list-style: disc inside;
+
+            li {
+                font-size: 1.6em;
+                margin-bottom: 1em;
+            }
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+
+            .card {
+                background-color: var(--colorB);
+                padding: 1.5em;
+                border-radius: 1em;
+                text-align: center;
+                font-size: 1.6em;
+
+                h3 {
+                    font-size: 2em;
+                    margin-bottom: 1em;
+                    color: var(--pointB);
+                }
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
